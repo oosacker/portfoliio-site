@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import React, {useState, useEffect} from 'react';
+
 import {
   MDBNavbar, 
   MDBNavbarBrand, 
@@ -17,16 +19,15 @@ import {
   Link
 } from "react-router-dom";
 
-class NavbarPage extends Component {
-state = {
-  isOpen: false
-};
+const App = () => {
 
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
-}
+  const[isOpen, setOpen] = useState(false);
 
-render() {
+  const toggleCollapse = () => {
+    console.log('set');
+    setOpen(!isOpen);
+  }
+
   return (
     <Router>
       <MDBNavbar color="indigo" dark expand="md">
@@ -35,9 +36,9 @@ render() {
           <strong className="white-text">Natsuki</strong>
         </MDBNavbarBrand>
 
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
+        <MDBNavbarToggler onClick={toggleCollapse} />
 
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
 
           <MDBNavbarNav left>
 
@@ -55,11 +56,15 @@ render() {
             <MDBNavItem>
               
               <a href='mailto:natsuki.hasegawa@gmail.com?subject=Contact'>
-                <MDBIcon icon="envelope" className="white-text ml-3"/>
+                <MDBIcon icon="envelope" className="white-text"/>
               </a>
 
               <a href='https://www.linkedin.com/in/haseganats/'>
                 <MDBIcon fab icon="linkedin" className="white-text ml-3"/>
+              </a>
+
+              <a href='https://twitter.com/NatsukiNZ'>
+                <MDBIcon fab icon="twitter" className="white-text ml-3"/>
               </a>
               
             </MDBNavItem>
@@ -85,8 +90,8 @@ render() {
       </Switch>
 
     </Router>
-    );
-  }
+  );
 }
 
-export default NavbarPage;
+
+export default App;
