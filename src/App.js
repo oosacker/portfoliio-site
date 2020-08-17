@@ -1,5 +1,7 @@
-// import React, { Component } from "react";
-import React, {useState, useEffect} from 'react';
+import React, {
+  useState, 
+  useEffect
+} from 'react';
 
 import {
   MDBNavbar, 
@@ -18,6 +20,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import Home from './home';
+import Projects from './projects';
 
 const App = () => {
 
@@ -76,15 +81,11 @@ const App = () => {
       <Switch>
 
         <Route path="/projects">
-          <>
-            this is the projects page
-          </>
+          <Projects />
         </Route>
 
         <Route path="/">
-          <>
-            this is the home page
-          </>
+          <Home />
         </Route>
 
       </Switch>
@@ -92,6 +93,5 @@ const App = () => {
     </Router>
   );
 }
-
 
 export default App;
