@@ -1,5 +1,5 @@
 body {
-  background-color: lightcyan;
+  background-color: white;
 }
 
 nav {
@@ -7,5 +7,12 @@ nav {
 }
 
 .profile-pic {
-  width: 300px;
+  width: 340px;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+}
+
+.image-container {
+  text-align: center;
 }
