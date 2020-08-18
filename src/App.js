@@ -18,11 +18,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  useLocation 
 } from "react-router-dom";
 
 import Home from './home';
 import Projects from './projects';
+import About from './about';
+import Hobbies from './hobbies';
 
 import './App.css'; 
 
@@ -36,12 +38,15 @@ const App = () => {
     setOpen(!isOpen);
   }
 
-  useEffect( () => {
-    
-  }, [currentPage]);
+  const navClickHandler = () => {
+    setPage(window.location.pathname);
+    console.log(currentPage);
+  }  
 
   return (
+
     <div className='main-div'>
+
       <Router>
         <MDBNavbar color="indigo" dark expand="md">
 
@@ -55,19 +60,19 @@ const App = () => {
 
             <MDBNavbarNav left>
 
-              <MDBNavItem active>
+              <MDBNavItem active={window.location.pathname === '/'} onClick={navClickHandler}>
                 <MDBNavLink to="/">Home</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem>
+              <MDBNavItem  active={window.location.pathname === '/projects'} onClick={navClickHandler}>
                 <MDBNavLink to="/projects">Projects</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem>
+              <MDBNavItem active={window.location.pathname === '/hobbies'} onClick={navClickHandler}>
                 <MDBNavLink to="/hobbies">Hobbies</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem>
+              <MDBNavItem active={window.location.pathname === '/about'} onClick={navClickHandler}>
                 <MDBNavLink to="/about">About</MDBNavLink>
               </MDBNavItem>
 
@@ -99,6 +104,14 @@ const App = () => {
         </MDBNavbar>
 
         <Switch>
+
+        <Route path="/about">
+            <About />
+          </Route>
+
+          <Route path="/hobbies">
+            <Hobbies />
+          </Route>
 
           <Route path="/projects">
             <Projects />

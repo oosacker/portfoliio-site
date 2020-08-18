@@ -7,7 +7,7 @@ const Home = () => {
               <MDBRow>
                 <MDBCol lg='4' md='12'>
                     <div className='image-container'>
-                        <img src='/images/photo.png' className='profile-pic z-depth-1-half'/>
+                        <img src='/images/photo.png' className='profile-pic z-depth-1-half' alt='profile'/>
                     </div>
                 </MDBCol>
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-const Projects = () => {
+const About = () => {
     return (
         <MDBContainer>
-              Projects
+              about
         </MDBContainer>
     );
 }
-export default Projects;
+export default About;
