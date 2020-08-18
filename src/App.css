@@ -15,4 +15,11 @@ nav {
 
 .image-container {
   text-align: center;
+
+  border: 1px solid red;
+}
+
+.profile-container, .history-container {
+  padding: 10px;
+  border: 1px solid red;
 }

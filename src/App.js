@@ -12,6 +12,7 @@ import {
   MDBNavbarToggler, 
   MDBCollapse, 
   MDBIcon, 
+  MDBFooter 
 } from "mdbreact";
 
 import {
@@ -25,6 +26,7 @@ import Home from './home';
 import Projects from './projects';
 import About from './about';
 import Hobbies from './hobbies';
+import Footer from './footer';
 
 import './App.css'; 
 
@@ -102,6 +104,7 @@ const App = () => {
 
           </MDBCollapse>
         </MDBNavbar>
+        
 
         <Switch>
 
@@ -125,6 +128,8 @@ const App = () => {
 
       </Router>
 
+
+      <Footer />
     </div>
 
   );
