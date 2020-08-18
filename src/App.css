@@ -1,9 +1,10 @@
 body {
   background-color: white;
+  margin-top: 70px;
 }
 
 nav {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .profile-pic {
@@ -15,11 +16,11 @@ nav {
 
 .image-container {
   text-align: center;
-
+  padding: 10px;
   border: 1px solid red;
 }
 
-.profile-container, .history-container {
+.profile-container, .history-container, .skills-container, .education-container {
   padding: 10px;
   border: 1px solid red;
 }

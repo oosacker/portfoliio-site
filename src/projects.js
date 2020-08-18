@@ -21,10 +21,10 @@ import Modal from './modal';
 
 const Projects = () => {
 
-    const[modal1State, setModal1State] = useState(false);
+    const[modalState, setModalState] = useState(false);
 
     const btn1Handler = () => {
-        setModal1State(!modal1State);
+        setModalState(!modalState);
     }
 
 
@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <MDBContainer>
 
-            <Modal header={'header'} body={'body'} display={modal1State}/>
+            <Modal header={'header'} body={'body'} modalState={modalState}/>
 
             <MDBRow>
 

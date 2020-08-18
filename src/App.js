@@ -50,7 +50,7 @@ const App = () => {
     <div className='main-div'>
 
       <Router>
-        <MDBNavbar color="indigo" dark expand="md">
+        <MDBNavbar color="indigo" dark expand="md" fixed="top">
 
           <MDBNavbarBrand>
             <strong className="white-text">Natsuki</strong>

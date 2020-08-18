@@ -16,6 +16,22 @@ const Home = () => {
             </MDBRow>
 
             <MDBRow>
+                <MDBCol className='skills-container'>
+                    <h3>Skills Summary</h3>
+                    <ul>
+                        <li>Something</li>
+                    </ul>
+                </MDBCol>
+            </MDBRow>
+
+            <MDBRow>
+                <MDBCol className='education-container'>
+                    <h3>Education</h3>
+                    <p>lorem</p>
+                </MDBCol>
+            </MDBRow>
+
+            <MDBRow>
                 <MDBCol className='history-container'>
                     <h3>Employment History</h3>
                     <p>lorem</p>

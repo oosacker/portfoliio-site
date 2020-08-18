@@ -15,11 +15,17 @@ import {
 
 const Modal = (props) => {
 
+    const[modalState, setModalState] = useState(false);
+
+    useEffect( () => {
+        setModalState(props.modalState);
+    })
+
     return (
         <MDBContainer>
             {/* <MDBBtn onClick={toggleModal}>Modal</MDBBtn> */}
 
-            <MDBModal isOpen={props.display} >
+            <MDBModal isOpen={modalState} toggle={!props.modalState}>
 
                 <MDBModalHeader >
                     {props.header}
