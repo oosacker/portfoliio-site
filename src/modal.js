@@ -1,6 +1,7 @@
 import React, {   
     useState, 
-    useEffect 
+    useEffect,
+    useContext
 } from 'react';
 
 import { 
@@ -13,13 +14,11 @@ import {
 } from 'mdbreact';
 
 
+import { ModalContext } from './projects';
+
 const Modal = (props) => {
 
-    const[modalState, setModalState] = useState(false);
-
-    useEffect( () => {
-        setModalState(props.modalState);
-    })
+    const modalState = useContext(ModalContext);
 
     return (
         <MDBContainer>

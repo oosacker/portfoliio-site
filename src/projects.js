@@ -1,6 +1,8 @@
 import React, {    
     useState, 
-    useEffect 
+    useEffect ,
+    useContext,
+    createContext
 } from "react";
 
 import { 
@@ -17,7 +19,7 @@ import {
 
 import Modal from './modal';
 
-
+export const ModalContext = createContext(false);
 
 const Projects = () => {
 
@@ -27,12 +29,16 @@ const Projects = () => {
         setModalState(!modalState);
     }
 
-
-
     return (
         <MDBContainer>
 
-            <Modal header={'header'} body={'body'} modalState={modalState}/>
+            <ModalContext.Provider value={modalState}>
+                <Modal 
+                    header={'header'} 
+                    body={'body'} 
+                />
+            </ModalContext.Provider>
+            
 
             <MDBRow>
 
