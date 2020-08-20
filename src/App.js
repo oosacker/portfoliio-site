@@ -22,13 +22,13 @@ import {
   useLocation 
 } from "react-router-dom";
 
-import Home from './home';
-import Projects from './projects';
-import About from './about';
-import Hobbies from './hobbies';
+import Home from './pages/home';
+import Projects from './pages/projects';
+import About from './pages/about';
+import Hobbies from './pages/hobbies';
 import Footer from './footer';
 
-import './App.css'; 
+import './css/App.css'; 
 
 const App = () => {
 

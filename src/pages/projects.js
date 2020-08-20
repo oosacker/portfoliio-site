@@ -1,6 +1,6 @@
 import React, {    
     useState, 
-    useEffect ,
+    useEffect,
     useContext,
     createContext
 } from "react";
@@ -17,7 +17,7 @@ import {
     MDBRow, 
 } from "mdbreact";
 
-import Modal from './modal';
+import Modal from '../modal';
 
 export const ModalContext = createContext(false);
 
@@ -45,7 +45,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"  />
+                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
@@ -59,7 +59,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
@@ -73,7 +73,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
