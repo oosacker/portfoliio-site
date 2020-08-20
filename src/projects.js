@@ -36,6 +36,7 @@ const Projects = () => {
                 <Modal 
                     header={'header'} 
                     body={'body'} 
+                    footer={'footer'}
                 />
             </ModalContext.Provider>
             

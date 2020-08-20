@@ -26,11 +26,10 @@ const Modal = (props) => {
 
     return (
         <MDBContainer>
-            {/* <MDBBtn onClick={toggleModal}>Modal</MDBBtn> */}
 
             <MDBModal isOpen={modalState} toggle={toggleModal}>
 
-                <MDBModalHeader >
+                <MDBModalHeader toggle={toggleModal}>
                     {props.header}
                 </MDBModalHeader>
 
@@ -39,7 +38,8 @@ const Modal = (props) => {
                 </MDBModalBody>
 
                 <MDBModalFooter>
-                    {/* <MDBBtn color="primary" onClick={toggleModal}>Close</MDBBtn> */}
+                    {/* {props.footer} */}
+                    <MDBBtn onClick={toggleModal}>Close</MDBBtn>
                 </MDBModalFooter>
 
             </MDBModal>
