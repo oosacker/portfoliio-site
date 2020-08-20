@@ -18,13 +18,17 @@ import { ModalContext } from './projects';
 
 const Modal = (props) => {
 
-    const modalState = useContext(ModalContext);
+    const [modalState, setModalState] = useContext(ModalContext);
+
+    const toggleModal = () => {
+        setModalState(!modalState);
+    }
 
     return (
         <MDBContainer>
             {/* <MDBBtn onClick={toggleModal}>Modal</MDBBtn> */}
 
-            <MDBModal isOpen={modalState} toggle={!props.modalState}>
+            <MDBModal isOpen={modalState} toggle={toggleModal}>
 
                 <MDBModalHeader >
                     {props.header}

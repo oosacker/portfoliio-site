@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <MDBContainer>
 
-            <ModalContext.Provider value={modalState}>
+            <ModalContext.Provider value={[modalState, setModalState]}>
                 <Modal 
                     header={'header'} 
                     body={'body'} 
