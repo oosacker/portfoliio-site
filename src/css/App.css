@@ -1,26 +1,33 @@
 body {
   background-color: white;
-  margin-top: 70px;
-}
-
-nav {
-  /* margin-bottom: 20px; */
+  margin-top: 75px;
 }
 
 .profile-pic {
-  width: 340px;
-  border: 1px solid black;
+  width: 320px;  
   border-radius: 10px;
-  
+  margin-bottom: 15px;
+}
+ 
+.profile-container-text, 
+.history-container-text, 
+.skills-container-text, 
+.education-container-text {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .image-container {
   text-align: center;
-  padding: 10px;
-  border: 1px solid red;
+  padding: 0;
 }
 
-.profile-container, .history-container, .skills-container, .education-container {
-  padding: 10px;
-  border: 1px solid red;
+.zoom:hover {
+  /* transform: scale(1.08); */
+  /* border: 2px groove indigo; */
+}
+
+.link {
+  color: #007bff;
 }

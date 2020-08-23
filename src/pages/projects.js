@@ -45,7 +45,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
+                        <MDBCardImage className="img-fluid" src="/images/logo512.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
@@ -59,7 +59,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
+                        <MDBCardImage className="img-fluid" src="/images/logo512.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
@@ -73,7 +73,7 @@ const Projects = () => {
 
                 <MDBCol>
                     <MDBCard>
-                        <MDBCardImage className="img-fluid" src="/images/logo192.png" waves />
+                        <MDBCardImage className="img-fluid" src="/images/logo512.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Card title</MDBCardTitle>
                             <MDBCardText>
