@@ -3,174 +3,168 @@ import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody, MDBTableHead, MDB
 
 const Home = () => {
     return (
-        <MDBContainer>
+        <MDBContainer className="home-container">
 
-            <MDBRow>
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
 
-            <MDBCol className='image-container' xl='4' lg='12' top>
-                    <div className='z-depth-1-half image-container-text'>
-                        {/* <MDBView hover zoom className='image-container-inner'> */}
-                            <img src='/images/photo.png' className='profile-pic' alt='profile'/>
-                        {/* </MDBView> */}
-                    </div>
-                </MDBCol>
-
-                <MDBCol className='profile-container' xl='8' lg='12' top>
-                    <div className='profile-container-text z-depth-1-half zoom'>
-                        <h3>Profile</h3>
-                        
-                        <p>Natsuki Hasegawa is a New Zealand-born Japanese male from Wellington who just completed his studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School (courses were taught by Victoria University of Wellington). He also holds a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, he was an electronics engineer for over 6 years. Natsuki is passionate about learning how things work and creating things which are both aestheically pleasing and functional.</p>
-                    </div>
-                </MDBCol>
-
-            </MDBRow>
-
-            <MDBRow>
-                <MDBCol className='skills-container'>
-                    <div className='skills-container-text z-depth-1-half zoom'>
-
-                        <h3>Skills Summary</h3>
-
-                        <MDBRow>
-                            <MDBCol xl='4' lg='12'className='skill-col1'>
-                                <h5>Software</h5>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Python (Flask framework)</li>
-                                    <li>JavaScript (React, Node.js, Express.js)</li>
-                                    <li>PHP (Silverstripe CMS)</li>
-                                    <li>CSS (Sass, Bootstrap)</li>
-                                    <li>Delphi</li>
-                                    <li>C#</li>
-                                    <li>Databases (SQL, MongoDB)</li>
-                                    <li>Microcontroller firmware (ANSI-C, Assembler)</li>
-                                </ul>
-                            </MDBCol>
-                        
-                            <MDBCol xl='4' lg='12' className='skill-col2'>
-                                <h5>Hardware</h5>
-                                <ul>
-                                    <li>PCB design (Altium Designer)</li>
-                                    <li>PCB manufacture (milling machines)</li>
-                                    <li>PCB assembly (manual and reflow soldering)</li>
-                                    <li>Linear power supplies</li>
-                                    <li>Rechargable battery systems (Ni-MH and Ni-Polymer)</li>
-                                    <li>Microcontroller systems</li>
-                                    <li>Metalworking (basic)</li>
-                                </ul>
-                            </MDBCol>
-
-                            <MDBCol xl='4' lg='12' className='skill-col3'>
-                                <h5>Others</h5>
-                                <ul>
-                                    <li>Public speaking</li>
-                                    <li>Full New Zealand Driver Licence</li>
-                                    <li>Translating between Japanese and English languages</li>
-                                </ul>
-                            </MDBCol>
-
-                        </MDBRow>
-                    </div>
-
+                <MDBCol xl="4" lg="12" top className="right-border">
+                    {/* <h3>Natsuki Hasegawa</h3> */}
+                    <MDBView hover zoom>
+                        <img src="/images/photo.png" className="img-fluid z-depth-1-half" alt="profile"/>
+                    </MDBView>
                     
                 </MDBCol>
+
+                <MDBCol xl="8" lg="12" top>
+                    <h3>Natsuki Hasegawa</h3>
+                    <p>I am a New Zealand-born Japanese male from Wellington who just completed my studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School (courses were taught by Victoria University of Wellington).</p> 
+                    <p>I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was an professional electronics engineer for over 6 years.</p> 
+                    <p>I am passionate about learning how things work and creating things which are both aestheically pleasing and functional. This website shows you my previous projects and interests.</p>
+                </MDBCol>
+
             </MDBRow>
 
-            <MDBRow>
-                <MDBCol className='history-container'>
-                    <div className='history-container-text z-depth-1-half zoom'>
 
-                        <h3>Employment History</h3>
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
 
-                        <MDBTable hover responsive>
+                <MDBCol xl="4" lg="12" className="right-border">
+                    <h3>Software Skills</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python (Flask framework)</li>
+                        <li>JavaScript (React, Node.js, Express.js)</li>
+                        <li>PHP (Silverstripe CMS)</li>
+                        <li>CSS (Sass, Bootstrap)</li>
+                        <li>Delphi</li>
+                        <li>C#</li>
+                        <li>Databases (SQL, MongoDB)</li>
+                        <li>Microcontroller firmware (ANSI-C, Assembler)</li>
+                    </ul>
+                </MDBCol>
 
-                            <caption><small>You can scroll this table horizontally on mobile.</small></caption>
+                <MDBCol xl="4" lg="12" className="right-border">
+                    <h3>Hardware Skills</h3>
+                    <ul>
+                        <li>PCB design (Altium Designer)</li>
+                        <li>PCB manufacture (milling machines)</li>
+                        <li>PCB assembly (manual and reflow soldering)</li>
+                        <li>Linear power supplies</li>
+                        <li>Rechargable battery systems (Ni-MH and Ni-Polymer)</li>
+                        <li>Microcontroller systems</li>
+                        <li>Metalworking (basic)</li>
+                    </ul>
+                </MDBCol>
 
-                            <MDBTableHead>
-                                <tr>
-                                    <th>Period</th>
-                                    <th>Company</th>
-                                    <th>Position</th>
-                                    <th>Summary</th>
-                                </tr>
-                            </MDBTableHead>
-                            <MDBTableBody>
-                                <tr>
-                                    <td>March 2020 – July 2020</td>
-                                    <td>Signify Limited</td>
-                                    <td>Web Developer Intern</td>
-                                    <td>
-                                        Employed full time for 3 months as  final part of my MSwDev degree. Worked on production web development projects, including coding, bug fixing and testing. 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>September 2009 – July 2015</td>
-                                    <td>Spark Dental Technology Limited</td>
-                                    <td>Hardware Development Engineer</td>
-                                    <td>
-                                        Worked remotely as the sole full time electronics engineer for a dental software company. Based at the site of Callaghan Innovation (formerly Industrial Research Limited). Worked on ultrasonic imaging systems and portable microcontroller-based electronics. 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>March 2009 – August 2009</td>
-                                    <td>Industrial Research Limited</td>
-                                    <td>Research Engineer</td>
-                                    <td>
-                                        6-month fixed-term contract after graduating from my MSc. Assisted their ultrasonic imaging programme by designing/assembling printed circuit boards, testing ultrasonic sensors, writing software and doing manual mechanical work.
-                                    </td>
-                                </tr>
-                            </MDBTableBody>
-                        </MDBTable>
-                    </div>
+                <MDBCol xl="4" lg="12">
+                    <h3>Other Skills</h3>
+                    <ul>
+                        <li>Public speaking</li>
+                        <li>Full New Zealand Driver Licence</li>
+                        <li>Translating between Japanese and English languages</li>
+                    </ul>
+                </MDBCol>
+
+            </MDBRow>
+
+
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
+                <MDBCol>
+                    <h3>Employment History</h3>
+
+                    <MDBTable hover responsive>
+
+                        <caption>
+                            <small>You can scroll this table horizontally on mobile.</small>
+                        </caption>
+
+                        <MDBTableHead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Company</th>
+                                <th>Position</th>
+                                <th>Summary</th>
+                            </tr>
+                        </MDBTableHead>
+                        <MDBTableBody>
+                            <tr>
+                                <td>March 2020 – July 2020</td>
+                                <td>Signify Limited</td>
+                                <td>Web Developer Intern</td>
+                                <td>
+                                    Employed full time for 3 months as  final part of my MSwDev degree. Worked on production web development projects, including coding, bug fixing and testing.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>September 2009 – July 2015</td>
+                                <td>Spark Dental Technology Limited</td>
+                                <td>Hardware Development Engineer</td>
+                                <td>
+                                    Worked remotely as the sole full time electronics engineer for a dental software company. Based at the site of Callaghan Innovation (formerly Industrial Research Limited). Worked on ultrasonic imaging systems and portable microcontroller-based electronics.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>March 2009 – August 2009</td>
+                                <td>Industrial Research Limited</td>
+                                <td>Research Engineer</td>
+                                <td>
+                                    6-month fixed-term contract after graduating from my MSc. Assisted their ultrasonic imaging programme by designing/assembling printed circuit boards, testing ultrasonic sensors, writing software and doing manual mechanical work.
+                                </td>
+                            </tr>
+                        </MDBTableBody>
+                    </MDBTable>
                 </MDBCol>
             </MDBRow>
 
-            <MDBRow>
-                <MDBCol className='education-container'>
-                    <div className='education-container-text z-depth-1-half zoom'>
+            
+ 
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
 
-                        <h3>Education</h3>
+                <MDBCol>
+                    <h3>Education</h3>
 
-                        <MDBTable hover responsive>
+                    <MDBTable hover responsive>
 
-                            <caption><small>You can scroll this table horizontally on mobile.</small></caption>
+                        <caption>
+                            <small>You can scroll this table horizontally on mobile.</small>
+                        </caption>
 
-                            <MDBTableHead>
-                                <tr>
-                                    <th>Period</th>
-                                    <th>School</th>
-                                    <th>Qualification</th>
-                                    <th>Subject</th>
-                                    <th>Honours</th>
-                                </tr>
-                            </MDBTableHead>
-                            <MDBTableBody>
-                                <tr>
-                                    <td>May 2019 – July 2020 </td>
-                                    <td>Victoria University of Wellington</td>
-                                    <td>Master of Software Development (MSwDev)</td>
-                                    <td>Software Development</td>
-                                    <td>Distinction</td>
-                                </tr>
-                                <tr>
-                                    <td>April 2007 – September 2008</td>
-                                    <td>Victoria University of Wellington</td>
-                                    <td>Master of Science (MSc)</td>
-                                    <td>Electronic and Computer Systems Engineering</td>
-                                    <td>Merit</td>
-                                </tr>
-                                <tr>
-                                    <td>March 2003 – December 2006</td>
-                                    <td>Victoria University of Wellington</td>
-                                    <td>Bachelor of Science and Technology (BScTech)</td>
-                                    <td>Electronics and Instrumentation</td>
-                                    <td>Honours 2nd Class, 1st Division</td>
-                                </tr>
-                            </MDBTableBody>
-                        </MDBTable>
-                    </div>
+                        <MDBTableHead>
+                            <tr>
+                                <th>Period</th>
+                                <th>School</th>
+                                <th>Qualification</th>
+                                <th>Subject</th>
+                                <th>Honours</th>
+                            </tr>
+                        </MDBTableHead>
+                        <MDBTableBody>
+                            <tr>
+                                <td>May 2019 – July 2020 </td>
+                                <td>Victoria University of Wellington</td>
+                                <td>Master of Software Development (MSwDev)</td>
+                                <td>Software Development</td>
+                                <td>Distinction</td>
+                            </tr>
+                            <tr>
+                                <td>April 2007 – September 2008</td>
+                                <td>Victoria University of Wellington</td>
+                                <td>Master of Science (MSc)</td>
+                                <td>Electronic and Computer Systems Engineering</td>
+                                <td>Merit</td>
+                            </tr>
+                            <tr>
+                                <td>March 2003 – December 2006</td>
+                                <td>Victoria University of Wellington</td>
+                                <td>Bachelor of Science and Technology (BScTech)</td>
+                                <td>Electronics and Instrumentation</td>
+                                <td>Honours 2nd Class, 1st Division</td>
+                            </tr>
+                        </MDBTableBody>
+                    </MDBTable>
                 </MDBCol>
+
             </MDBRow>
+
         </MDBContainer>
     );
 }
