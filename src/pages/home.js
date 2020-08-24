@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody, MDBTableHead } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody, MDBTableHead, MDBView } from "mdbreact";
 
 const Home = () => {
     return (
@@ -7,9 +7,11 @@ const Home = () => {
 
             <MDBRow>
 
-                <MDBCol className='image-container' xl='4' lg='12' top>
-                    <div className='image-container-text z-depth-1-half '>
-                        <img src='/images/photo.png' className='profile-pic ' alt='profile'/>
+            <MDBCol className='image-container' xl='4' lg='12' top>
+                    <div className='z-depth-1-half image-container-text'>
+                        {/* <MDBView hover zoom className='image-container-inner'> */}
+                            <img src='/images/photo.png' className='profile-pic' alt='profile'/>
+                        {/* </MDBView> */}
                     </div>
                 </MDBCol>
 
@@ -17,7 +19,7 @@ const Home = () => {
                     <div className='profile-container-text z-depth-1-half zoom'>
                         <h3>Profile</h3>
                         
-                        <p>I'm Natsuki Hasegawa, a New Zealand-born Japanese male from Wellington. I've just completed my studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School. I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was an electronics engineer for over 6 years. </p>
+                        <p>Natsuki Hasegawa is a New Zealand-born Japanese male from Wellington who just completed his studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School (courses were taught by Victoria University of Wellington). He also holds a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, he was an electronics engineer for over 6 years. Natsuki is passionate about learning how things work and creating things which are both aestheically pleasing and functional.</p>
                     </div>
                 </MDBCol>
 
@@ -63,7 +65,7 @@ const Home = () => {
                                 <ul>
                                     <li>Public speaking</li>
                                     <li>Full New Zealand Driver Licence</li>
-                                    <li>Translating between Japanese-English languages</li>
+                                    <li>Translating between Japanese and English languages</li>
                                 </ul>
                             </MDBCol>
 
@@ -139,6 +141,7 @@ const Home = () => {
                                     <th>School</th>
                                     <th>Qualification</th>
                                     <th>Subject</th>
+                                    <th>Honours</th>
                                 </tr>
                             </MDBTableHead>
                             <MDBTableBody>
@@ -146,19 +149,22 @@ const Home = () => {
                                     <td>May 2019 – July 2020 </td>
                                     <td>Victoria University of Wellington</td>
                                     <td>Master of Software Development (MSwDev)</td>
-                                    <td>Software Engineering</td>
+                                    <td>Software Development</td>
+                                    <td>Distinction</td>
                                 </tr>
                                 <tr>
                                     <td>April 2007 – September 2008</td>
                                     <td>Victoria University of Wellington</td>
                                     <td>Master of Science (MSc)</td>
                                     <td>Electronic and Computer Systems Engineering</td>
+                                    <td>Merit</td>
                                 </tr>
                                 <tr>
                                     <td>March 2003 – December 2006</td>
                                     <td>Victoria University of Wellington</td>
                                     <td>Bachelor of Science and Technology (BScTech)</td>
                                     <td>Electronics and Instrumentation</td>
+                                    <td>Honours 2nd Class, 1st Division</td>
                                 </tr>
                             </MDBTableBody>
                         </MDBTable>
