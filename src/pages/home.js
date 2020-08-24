@@ -7,13 +7,16 @@ const Home = () => {
 
             <MDBRow>
 
-                <MDBCol className='image-container' xl='4' lg='12' top>
-                    <img src='/images/photo.png' className='profile-pic z-depth-1-half zoom' alt='profile'/>
+                <MDBCol className='image-container ' xl='4' lg='12' top>
+                    <div className='image-container-text z-depth-1-half zoom'>
+                        <img src='/images/photo.png' className='profile-pic ' alt='profile'/>
+                    </div>
                 </MDBCol>
 
                 <MDBCol className='profile-container' xl='8' lg='12' top>
                     <div className='profile-container-text z-depth-1-half zoom'>
                         <h3>Profile</h3>
+                        
                         <p>I'm Natsuki Hasegawa, a New Zealand-born Japanese male from Wellington. I've just completed my studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School. I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was an electronics engineer for over 6 years. </p>
                     </div>
                 </MDBCol>
@@ -24,12 +27,10 @@ const Home = () => {
                 <MDBCol className='skills-container'>
                     <div className='skills-container-text z-depth-1-half zoom'>
 
-                        <MDBRow>
-                            <h3>Skills Summary</h3>
-                        </MDBRow>
+                        <h3>Skills Summary</h3>
 
                         <MDBRow>
-                            <MDBCol>
+                            <MDBCol xl='4' lg='12'>
                                 <h5>Software</h5>
                                 <ul>
                                     <li>Java</li>
@@ -44,7 +45,7 @@ const Home = () => {
                                 </ul>
                             </MDBCol>
                         
-                            <MDBCol>
+                            <MDBCol xl='4' lg='12'>
                                 <h5>Hardware</h5>
                                 <ul>
                                     <li>PCB design (Altium Designer)</li>
@@ -57,7 +58,7 @@ const Home = () => {
                                 </ul>
                             </MDBCol>
 
-                            <MDBCol>
+                            <MDBCol xl='4' lg='12'>
                                 <h5>Others</h5>
                                 <ul>
                                     <li>Public speaking</li>
@@ -76,8 +77,13 @@ const Home = () => {
             <MDBRow>
                 <MDBCol className='history-container'>
                     <div className='history-container-text z-depth-1-half zoom'>
+
                         <h3>Employment History</h3>
+
                         <MDBTable hover responsive>
+
+                            <caption><small>You can scroll this table horizontally on mobile.</small></caption>
+
                             <MDBTableHead>
                                 <tr>
                                     <th>Period</th>
@@ -120,8 +126,13 @@ const Home = () => {
             <MDBRow>
                 <MDBCol className='education-container'>
                     <div className='education-container-text z-depth-1-half zoom'>
+
                         <h3>Education</h3>
+
                         <MDBTable hover responsive>
+
+                            <caption><small>You can scroll this table horizontally on mobile.</small></caption>
+
                             <MDBTableHead>
                                 <tr>
                                     <th>Period</th>
