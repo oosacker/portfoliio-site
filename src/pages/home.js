@@ -7,8 +7,8 @@ const Home = () => {
 
             <MDBRow>
 
-                <MDBCol className='image-container ' xl='4' lg='12' top>
-                    <div className='image-container-text z-depth-1-half zoom'>
+                <MDBCol className='image-container' xl='4' lg='12' top>
+                    <div className='image-container-text z-depth-1-half '>
                         <img src='/images/photo.png' className='profile-pic ' alt='profile'/>
                     </div>
                 </MDBCol>
@@ -30,7 +30,7 @@ const Home = () => {
                         <h3>Skills Summary</h3>
 
                         <MDBRow>
-                            <MDBCol xl='4' lg='12'>
+                            <MDBCol xl='4' lg='12'className='skill-col1'>
                                 <h5>Software</h5>
                                 <ul>
                                     <li>Java</li>
@@ -45,7 +45,7 @@ const Home = () => {
                                 </ul>
                             </MDBCol>
                         
-                            <MDBCol xl='4' lg='12'>
+                            <MDBCol xl='4' lg='12' className='skill-col2'>
                                 <h5>Hardware</h5>
                                 <ul>
                                     <li>PCB design (Altium Designer)</li>
@@ -58,7 +58,7 @@ const Home = () => {
                                 </ul>
                             </MDBCol>
 
-                            <MDBCol xl='4' lg='12'>
+                            <MDBCol xl='4' lg='12' className='skill-col3'>
                                 <h5>Others</h5>
                                 <ul>
                                     <li>Public speaking</li>

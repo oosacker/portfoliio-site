@@ -10,16 +10,8 @@ body {
 } */
 img.profile-pic{
   width: 300px;  
-  border-radius: 10px;
-
-  /* padding-left: 15px; */
-
-  /* max-width: 100%; */
+  border-radius: 5px;
   height: auto;
-  /* max-width: 50vw; */
-
-  /* border-radius: 10px; */
-  /* margin-bottom: 15px;  */
 }
  
 .profile-container-text, 
@@ -34,16 +26,22 @@ img.profile-pic{
   /* border: 2px groove indigo; */
 }
 
+
+
 .image-container {
   text-align: center;
   /* padding: 0; */
 }
 
-.zoom:hover {
-  /* transform: scale(1.08); */
+.hover-fx:hover {
+  transform: scale(1.5);
   /* border: 2px groove indigo; */
 }
 
 .link {
   color: #007bff;
+}
+
+.skill-col1, .skill-col2 {
+  border-right: 1px solid rgb(222, 226, 230);;
 }
