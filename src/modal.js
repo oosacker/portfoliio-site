@@ -27,7 +27,7 @@ const Modal = (props) => {
     return (
         <MDBContainer>
 
-            <MDBModal isOpen={modalState} toggle={toggleModal}>
+            <MDBModal isOpen={modalState} toggle={toggleModal} animation="top" Modal autoFocus={true}>
 
                 <MDBModalHeader toggle={toggleModal}>
                     {props.header}

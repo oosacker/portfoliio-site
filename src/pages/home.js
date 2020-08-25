@@ -1,5 +1,13 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody, MDBTableHead, MDBView } from "mdbreact";
+
+import { 
+    MDBContainer, 
+    MDBRow, 
+    MDBCol, 
+    MDBTable, 
+    MDBTableBody, 
+    MDBTableHead
+} from "mdbreact";
 
 const Home = () => {
     return (
@@ -7,12 +15,8 @@ const Home = () => {
 
             <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
 
-                <MDBCol xl="4" lg="12" top className="right-border mb-1">
-                    {/* <h3>Natsuki Hasegawa</h3> */}
-                    <MDBView hover zoom>
-                        <img src="/images/photo.png" className="img-fluid z-depth-1-half" alt="profile"/>
-                    </MDBView>
-                    
+                <MDBCol xl="4" lg="12" top className="right-border mb-2 profile-pic-container">
+                    <img src="/images/photo.png" className="img-fluid z-depth-1-half rounded" alt="profile"/>
                 </MDBCol>
 
                 <MDBCol xl="8" lg="12" top>

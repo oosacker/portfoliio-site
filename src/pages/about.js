@@ -4,7 +4,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 const About = () => {
     return (
         <MDBContainer>
-              This website was created with React and the MDBootstrap library.
+              <p>This website was created from scratch with React and the MDBootstrap UI library. </p>
         </MDBContainer>
     );
 }

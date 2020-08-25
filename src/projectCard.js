@@ -5,20 +5,25 @@ import React, {
     createContext
 } from "react";
 
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBTypography  } from "mdbreact";
+import { 
+    MDBRow, 
+    MDBCol, 
+    MDBBtn, 
+    MDBTypography  
+} from "mdbreact";
 
 const ProjectCard = (props) => {
     return (
         <MDBCol className="m-3 z-depth-1-half round-corner" sm="3">
 
-            <MDBRow className="px-3 py-1">
-                <img className="img-fluid rounded" src={props.image} />
+            <MDBRow className="px-3 py-2">
+                <img className="img-fluid z-depth-1-half rounded" src={props.image} />
             </MDBRow>
 
             <MDBRow className="px-3 py-1">
-                <MDBTypography tag='h4' variant="h4-responsive" className="h3">
+                <h4>
                     {props.title}
-                </MDBTypography>
+                </h4>
             </MDBRow>
 
             <MDBRow className="px-3">
