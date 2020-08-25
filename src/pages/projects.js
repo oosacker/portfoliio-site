@@ -43,7 +43,7 @@ const Projects = () => {
                 </MDBCol>
             </MDBRow>
 
-            <MDBRow>
+            <MDBRow center>
 
                 <ProjectCard 
                     title="TypingTester"
