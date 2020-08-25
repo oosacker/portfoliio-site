@@ -7,7 +7,7 @@ const Home = () => {
 
             <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
 
-                <MDBCol xl="4" lg="12" top className="right-border">
+                <MDBCol xl="4" lg="12" top className="right-border mb-1">
                     {/* <h3>Natsuki Hasegawa</h3> */}
                     <MDBView hover zoom>
                         <img src="/images/photo.png" className="img-fluid z-depth-1-half" alt="profile"/>

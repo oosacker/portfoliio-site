@@ -8,16 +8,12 @@ import React, {
 import { 
     MDBContainer, 
     MDBBtn, 
-    MDBCard, 
-    MDBCardBody, 
-    MDBCardImage, 
-    MDBCardTitle, 
-    MDBCardText, 
     MDBCol, 
     MDBRow, 
 } from "mdbreact";
 
 import Modal from '../modal';
+import ProjectCard from '../projectCard';
 
 export const ModalContext = createContext(false);
 
@@ -25,7 +21,7 @@ const Projects = () => {
 
     const[modalState, setModalState] = useState(false);
 
-    const btn1Handler = () => {
+    const btnHandler = () => {
         setModalState(!modalState);
     }
 
@@ -33,127 +29,73 @@ const Projects = () => {
         <MDBContainer>
 
             <ModalContext.Provider value={[modalState, setModalState]}>
-                <Modal 
-                    header={'header'} 
-                    body={'body'} 
+                <Modal
+                    header={'header'}
+                    body={'body'}
                     footer={'footer'}
                 />
             </ModalContext.Provider>
 
             <MDBRow>
-                <MDBCol >
-                <h3>Software Development Projects</h3>
-                <p>
-                    This page shows off some of my software development projects that I have worked on at university and at home. Some were group projects, while others were individual ones.
-                </p>
+                <MDBCol>
+                    <h3>Software Development Projects</h3>
+                    <p>This page shows off some of my software development projects that I have worked on at university and at home. Some were group projects, while others were individual ones.</p>
                 </MDBCol>
             </MDBRow>
-            
-                <MDBRow>
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/weather-checker.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>WeatherChecker</MDBCardTitle>
-                                <MDBCardText>
-                                Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+            <MDBRow>
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/type.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>TypingTester</MDBCardTitle>
-                                <MDBCardText>
-                                Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+                <ProjectCard 
+                    title="TypingTester"
+                    desc="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/tictac.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>Tic-Tac-Toe</MDBCardTitle>
-                                <MDBCardText>
-                                Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+                <ProjectCard 
+                    title="WeatherChecker"
+                    desc="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/stylefit.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>Stylefit</MDBCardTitle>
-                                <MDBCardText>
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+                <ProjectCard 
+                    title="Tic-Tac-Toe"
+                    desc="My first web app. A tic-tac-toe game based on JavaScript with the ability to play against the CPU."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                    
+                <ProjectCard 
+                    title="StyleFit"
+                    desc="A full-stack web application prototype for an industrial client (The Story Mint)."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                </MDBRow>
+                <ProjectCard 
+                    title="MakeRipples"
+                    desc="A full-stack web application prototype for an industrial client (MakeRipples)."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                <MDBRow>
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/makeripples.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>MakeRipples</MDBCardTitle>
-                                <MDBCardText>
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+                <ProjectCard 
+                    title="Customised Pizzas"
+                    desc="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/pizza.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>Customised Pizzas</MDBCardTitle>
-                                <MDBCardText>
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
+                <ProjectCard 
+                    title="Android Web Browser"
+                    desc="A fully-functional web browser app for Android phones built in under one week."
+                    image="https://via.placeholder.com/300x150"
+                    buttonHandler={btnHandler}
+                />
 
-                    <MDBCol lg='3'>
-                        <MDBCard className='mb-3'>
-                            <MDBCardImage className="img-fluid" src="/images/browser.png" waves />
-                            <MDBCardBody>
-                                <MDBCardTitle>Web Browser</MDBCardTitle>
-                                <MDBCardText>
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </MDBCardText>
-                                <MDBBtn onClick={btn1Handler}>Details</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
-                </MDBRow>
+            </MDBRow>
+
             
         </MDBContainer>
     );
