@@ -8,13 +8,32 @@ import React, {
 import { 
     MDBRow, 
     MDBCol, 
-    MDBBtn, 
-    MDBTypography  
+    MDBBtn
 } from "mdbreact";
 
+
+import Modal from './modal';
+
+export const ModalContext = createContext(false);
+
+
 const ProjectCard = (props) => {
+
+    const[modalState, setModalState] = useState(false);
+    const btnHandler = () => {
+        setModalState(!modalState);
+    }
+
     return (
         <MDBCol className="m-3 z-depth-1-half round-corner" lg="3" md="4" sm="6" xs="12">
+
+            <ModalContext.Provider value={[modalState, setModalState]}>
+                <Modal
+                    header={props.ModalHeader}
+                    body={props.ModalBody}
+                    footer={props.ModalFooter}
+                />
+            </ModalContext.Provider>
 
             <MDBRow className="px-3 py-2" center>
                 <img className="img-fluid z-depth-1-half rounded" src={props.image} />
@@ -31,7 +50,7 @@ const ProjectCard = (props) => {
             </MDBRow>
 
             <MDBRow className="px-3 py-1">
-                <MDBBtn onClick={props.buttonHandler}>Details</MDBBtn>
+                <MDBBtn onClick={btnHandler}>Details</MDBBtn>
             </MDBRow>
 
         </MDBCol>

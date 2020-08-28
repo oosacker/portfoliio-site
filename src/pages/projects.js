@@ -1,40 +1,18 @@
-import React, {    
-    useState, 
-    useEffect,
-    useContext,
-    createContext
-} from "react";
+import React from "react";
 
 import { 
     MDBContainer, 
-    MDBBtn, 
     MDBCol, 
     MDBRow, 
 } from "mdbreact";
 
-import Modal from '../modal';
 import ProjectCard from '../projectCard';
 
-export const ModalContext = createContext(false);
 
 const Projects = () => {
 
-    const[modalState, setModalState] = useState(false);
-
-    const btnHandler = () => {
-        setModalState(!modalState);
-    }
-
     return (
         <MDBContainer>
-
-            <ModalContext.Provider value={[modalState, setModalState]}>
-                <Modal
-                    header={'header'}
-                    body={'body'}
-                    footer={'footer'}
-                />
-            </ModalContext.Provider>
 
             <MDBRow>
                 <MDBCol>
@@ -49,60 +27,66 @@ const Projects = () => {
                     title="WeatherChecker"
                     desc="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
                     image="./images/small/weather-checker.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="WeatherChecker"
+                    ModalBody="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
+                    ModalFooter="https://weather-checker-v2.herokuapp.com/"
                 />
 
                 <ProjectCard 
                     title="TypingTester"
                     desc="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
                     image="./images/small/type.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="TypingTester"
+                    ModalBody="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
+                    ModalFooter="https://typingtester.herokuapp.com/"
                 />
 
                 <ProjectCard 
                     title="Tic-Tac-Toe"
                     desc="My first web app. A tic-tac-toe game based on JavaScript with the ability to play against the CPU."
                     image="./images/small/tictac.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="Tic-Tac-Toe"
+                    ModalBody="My first web app. A tic-tac-toe game based on JavaScript with the ability to play against the CPU."
+                    ModalFooter="https://tic-tac-toe-nat.herokuapp.com/"
                 />
 
                 <ProjectCard 
                     title="StyleFit"
                     desc="A full-stack web application prototype for an industrial client (The Story Mint)."
                     image="./images/small/stylefit.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="StyleFit"
+                    ModalBody="A full-stack web application prototype for an industrial client (The Story Mint)."
+                    ModalFooter="#"
                 />
 
                 <ProjectCard 
                     title="MakeRipples"
                     desc="A full-stack web application prototype for an industrial client (MakeRipples)."
                     image="./images/small/makeripples.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="MakeRipples"
+                    ModalBody="A full-stack web application prototype for an industrial client (MakeRipples)."
+                    ModalFooter="#"
                 />
 
                 <ProjectCard 
-                    title="Customised Pizzas"
+                    title="Pizzeria Napoli"
                     desc="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
                     image="./images/small/pizza.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="Pizzeria Napoli"
+                    ModalBody="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
+                    ModalFooter="#"
                 />
 
                 <ProjectCard 
                     title="Android Web Browser"
                     desc="A fully-functional web browser app for Android phones built in under one week."
                     image="./images/small/browser.jpg"
-                    buttonHandler={btnHandler}
+                    ModalHeader="Android Web Browser"
+                    ModalBody="A fully-functional web browser app for Android phones built in under one week."
+                    ModalFooter="#"
                 />
 
-                {/* <ProjectCard 
-                    title="Android Web Browser"
-                    desc="A fully-functional web browser app for Android phones built in under one week."
-                    image="./images/small/browser.jpg"
-                    buttonHandler={btnHandler}
-                /> */}
-
             </MDBRow>
-
             
         </MDBContainer>
     );

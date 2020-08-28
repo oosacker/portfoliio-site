@@ -14,7 +14,9 @@ import {
 } from 'mdbreact';
 
 
-import { ModalContext } from './pages/projects';
+// import { ModalContext } from './pages/projects';
+
+import { ModalContext } from './projectCard';
 
 const Modal = (props) => {
 
