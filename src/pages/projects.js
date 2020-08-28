@@ -46,16 +46,16 @@ const Projects = () => {
             <MDBRow center>
 
                 <ProjectCard 
-                    title="TypingTester"
-                    desc="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
-                    image="./images/small/type.jpg"
+                    title="WeatherChecker"
+                    desc="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
+                    image="./images/small/weather-checker.jpg"
                     buttonHandler={btnHandler}
                 />
 
                 <ProjectCard 
-                    title="WeatherChecker"
-                    desc="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
-                    image="./images/small/weather-checker.jpg"
+                    title="TypingTester"
+                    desc="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
+                    image="./images/small/type.jpg"
                     buttonHandler={btnHandler}
                 />
 
@@ -93,6 +93,13 @@ const Projects = () => {
                     image="./images/small/browser.jpg"
                     buttonHandler={btnHandler}
                 />
+
+                {/* <ProjectCard 
+                    title="Android Web Browser"
+                    desc="A fully-functional web browser app for Android phones built in under one week."
+                    image="./images/small/browser.jpg"
+                    buttonHandler={btnHandler}
+                /> */}
 
             </MDBRow>
 
