@@ -43,7 +43,7 @@ const Projects = () => {
                 </MDBCol>
             </MDBRow>
 
-            <MDBRow center>
+            <MDBRow left>
 
                 <ProjectCard 
                     title="WeatherChecker"
