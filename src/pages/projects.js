@@ -30,6 +30,7 @@ const Projects = () => {
                     ModalHeader="WeatherChecker"
                     ModalBody="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
                     ModalFooter="https://weather-checker-v2.herokuapp.com/"
+                    ModalImage="./images/weather-checker.png"
                 />
 
                 <ProjectCard 

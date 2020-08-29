@@ -6,6 +6,8 @@ import React, {
 
 import { 
     MDBContainer, 
+    MDBRow,
+    MDBCol,
     MDBBtn, 
     MDBModal, 
     MDBModalBody, 
@@ -13,8 +15,6 @@ import {
     MDBModalFooter 
 } from 'mdbreact';
 
-
-// import { ModalContext } from './pages/projects';
 
 import { ModalContext } from './projectCard';
 
@@ -27,8 +27,6 @@ const Modal = (props) => {
     }
 
     return (
-        <MDBContainer>
-
             <MDBModal isOpen={modalState} toggle={toggleModal} animation="top" Modal autoFocus={true}>
 
                 <MDBModalHeader toggle={toggleModal}>
@@ -36,7 +34,18 @@ const Modal = (props) => {
                 </MDBModalHeader>
 
                 <MDBModalBody>
-                    {props.body}
+
+                    <MDBContainer>
+                        <MDBCol md="4">
+                            <img className="img-fluid" src={props.image} />
+                        </MDBCol>
+
+                        <MDBCol md="8">
+                            {props.body}
+                        </MDBCol>
+                    </MDBContainer>
+
+                    
                 </MDBModalBody>
 
                 <MDBModalFooter>
@@ -45,7 +54,6 @@ const Modal = (props) => {
                 </MDBModalFooter>
 
             </MDBModal>
-      </MDBContainer>
     );
 }
 export default Modal;
