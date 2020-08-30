@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <MDBCol className="m-3 z-depth-1-half round-corner" lg="3" md="4" sm="6" xs="12">
+        <MDBCol className="m-3 z-depth-1-half round-corner project-card" lg="3" md="4" sm="6" xs="12">
 
             <ModalContext.Provider value={[modalState, setModalState]}>
                 <Modal
