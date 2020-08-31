@@ -38,14 +38,16 @@ const Modal = (props) => {
                         <MDBRow >
                             <img src={props.image} className={"img-fluid z-depth-1-half rounded"}/>
                         </MDBRow>
-                        <MDBRow>
+                        <MDBRow className="pt-3">
                             <p>{props.body}</p>
+                        </MDBRow>
+                        <MDBRow >
+                            <p><a href={props.url}>Link</a></p>
                         </MDBRow>
                     </MDBContainer>
                 </MDBModalBody>
 
                 <MDBModalFooter>
-                    {/* {props.footer} */}
                     <MDBBtn onClick={toggleModal}>Close</MDBBtn>
                 </MDBModalFooter>
 

@@ -29,7 +29,7 @@ const Projects = () => {
                     image="./images/small/weather-checker.jpg"
                     ModalHeader="WeatherChecker"
                     ModalBody="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
-                    ModalFooter="https://weather-checker-v2.herokuapp.com/"
+                    ModalURL="https://weather-checker-v2.herokuapp.com/"
                     ModalImage="./images/large/weather-checker.png"
                 />
 
@@ -39,7 +39,7 @@ const Projects = () => {
                     image="./images/small/type.jpg"
                     ModalHeader="TypingTester"
                     ModalBody="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
-                    ModalFooter="https://typingtester.herokuapp.com/"
+                    ModalURL="https://typingtester.herokuapp.com/"
                     ModalImage="./images/large/type.png"
                 />
 
@@ -49,7 +49,7 @@ const Projects = () => {
                     image="./images/small/tictac.jpg"
                     ModalHeader="Tic-Tac-Toe"
                     ModalBody="My first web app. A tic-tac-toe game based on JavaScript with the ability to play against the CPU."
-                    ModalFooter="https://tic-tac-toe-nat.herokuapp.com/"
+                    ModalURL="https://tic-tac-toe-nat.herokuapp.com/"
                     ModalImage="./images/large/tictac.png"
                 />
 
@@ -59,7 +59,7 @@ const Projects = () => {
                     image="./images/small/stylefit.jpg"
                     ModalHeader="StyleFit"
                     ModalBody="A full-stack web application prototype for an industrial client (The Story Mint)."
-                    ModalFooter="#"
+                    ModalURL="#"
                     ModalImage="./images/large/stylefit.png"
                 />
 
@@ -69,7 +69,7 @@ const Projects = () => {
                     image="./images/small/makeripples.jpg"
                     ModalHeader="MakeRipples"
                     ModalBody="A full-stack web application prototype for an industrial client (MakeRipples)."
-                    ModalFooter="#"
+                    ModalURL="#"
                     ModalImage="./images/large/makeripples.png"
                 />
 
@@ -79,7 +79,7 @@ const Projects = () => {
                     image="./images/small/pizza.jpg"
                     ModalHeader="Pizzeria Napoli"
                     ModalBody="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
-                    ModalFooter="#"
+                    ModalURL="#"
                     ModalImage="./images/large/pizza.png"
                 />
 
@@ -89,7 +89,7 @@ const Projects = () => {
                     image="./images/small/browser.jpg"
                     ModalHeader="Android Web Browser"
                     ModalBody="A fully-functional web browser app for Android phones built in under one week."
-                    ModalFooter="#"
+                    ModalURL="#"
                     ModalImage="./images/large/browser.png"
                 />
 
