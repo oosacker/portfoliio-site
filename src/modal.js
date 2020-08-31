@@ -27,12 +27,19 @@ const Modal = (props) => {
     }
 
     return (
-            <MDBModal isOpen={modalState} toggle={toggleModal} animation="top" Modal autoFocus={true} Modal size="lg" >
+            <MDBModal 
+                isOpen={modalState} 
+                toggle={toggleModal} 
+                animation="top" 
+                Modal 
+                autoFocus={true} 
+                Modal size="lg" 
+                keyboard={true}
+            >
 
                 <MDBModalHeader toggle={toggleModal}>
-                    {props.header}
+                    <h4>{props.header}</h4>
                 </MDBModalHeader>
-
                 <MDBModalBody>
                     <MDBContainer>
                         <MDBRow >
@@ -43,6 +50,9 @@ const Modal = (props) => {
                         </MDBRow>
                         <MDBRow >
                             <p><a href={props.url}>Link</a></p>
+                        </MDBRow>
+                        <MDBRow >
+                            <p><a href={props.github}>GitHub</a></p>
                         </MDBRow>
                     </MDBContainer>
                 </MDBModalBody>

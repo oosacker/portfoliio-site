@@ -5,7 +5,7 @@ const Footer = () => {
   return (
       
     <MDBFooter color="indigo" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
+      {/* <MDBContainer fluid className="text-center text-md-left">
 
         <MDBRow>
 
@@ -34,9 +34,9 @@ const Footer = () => {
 
         </MDBRow>
 
-      </MDBContainer>
+      </MDBContainer> */}
 
-      <div className="footer-copyright text-center py-3">
+      <div className="footer-copyright py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright Natsuki Hasegawa
         </MDBContainer>

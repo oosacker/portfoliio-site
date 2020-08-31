@@ -4,7 +4,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 const Hobbies = () => {
     return (
         <MDBContainer>
-              Hobbies
+              Under construction!
         </MDBContainer>
     );
 }
