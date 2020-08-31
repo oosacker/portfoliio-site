@@ -32,7 +32,7 @@ const ProjectCard = (props) => {
                     header={props.ModalHeader}
                     body={props.ModalBody}
                     footer={props.ModalFooter}
-
+                    image={props.ModalImage}
                 />
             </ModalContext.Provider>
 

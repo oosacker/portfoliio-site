@@ -30,7 +30,7 @@ const Projects = () => {
                     ModalHeader="WeatherChecker"
                     ModalBody="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
                     ModalFooter="https://weather-checker-v2.herokuapp.com/"
-                    ModalImage="./images/weather-checker.png"
+                    ModalImage="./images/large/weather-checker.png"
                 />
 
                 <ProjectCard 
@@ -40,6 +40,7 @@ const Projects = () => {
                     ModalHeader="TypingTester"
                     ModalBody="An online typing game based on Python (with the Flask web framework) and vanilla JavaScript."
                     ModalFooter="https://typingtester.herokuapp.com/"
+                    ModalImage="./images/large/type.png"
                 />
 
                 <ProjectCard 
@@ -49,6 +50,7 @@ const Projects = () => {
                     ModalHeader="Tic-Tac-Toe"
                     ModalBody="My first web app. A tic-tac-toe game based on JavaScript with the ability to play against the CPU."
                     ModalFooter="https://tic-tac-toe-nat.herokuapp.com/"
+                    ModalImage="./images/large/tictac.png"
                 />
 
                 <ProjectCard 
@@ -58,6 +60,7 @@ const Projects = () => {
                     ModalHeader="StyleFit"
                     ModalBody="A full-stack web application prototype for an industrial client (The Story Mint)."
                     ModalFooter="#"
+                    ModalImage="./images/large/stylefit.png"
                 />
 
                 <ProjectCard 
@@ -67,6 +70,7 @@ const Projects = () => {
                     ModalHeader="MakeRipples"
                     ModalBody="A full-stack web application prototype for an industrial client (MakeRipples)."
                     ModalFooter="#"
+                    ModalImage="./images/large/makeripples.png"
                 />
 
                 <ProjectCard 
@@ -76,6 +80,7 @@ const Projects = () => {
                     ModalHeader="Pizzeria Napoli"
                     ModalBody="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
                     ModalFooter="#"
+                    ModalImage="./images/large/pizza.png"
                 />
 
                 <ProjectCard 
@@ -85,6 +90,7 @@ const Projects = () => {
                     ModalHeader="Android Web Browser"
                     ModalBody="A fully-functional web browser app for Android phones built in under one week."
                     ModalFooter="#"
+                    ModalImage="./images/large/browser.png"
                 />
 
             </MDBRow>

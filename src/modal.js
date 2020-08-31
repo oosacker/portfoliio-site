@@ -27,25 +27,21 @@ const Modal = (props) => {
     }
 
     return (
-            <MDBModal isOpen={modalState} toggle={toggleModal} animation="top" Modal autoFocus={true}>
+            <MDBModal isOpen={modalState} toggle={toggleModal} animation="top" Modal autoFocus={true} Modal size="lg" >
 
                 <MDBModalHeader toggle={toggleModal}>
                     {props.header}
                 </MDBModalHeader>
 
                 <MDBModalBody>
-
                     <MDBContainer>
-                        <MDBCol md="4">
-                            <img className="img-fluid" src={props.image} />
-                        </MDBCol>
-
-                        <MDBCol md="8">
-                            {props.body}
-                        </MDBCol>
+                        <MDBRow >
+                            <img src={props.image} className={"img-fluid z-depth-1-half rounded"}/>
+                        </MDBRow>
+                        <MDBRow>
+                            <p>{props.body}</p>
+                        </MDBRow>
                     </MDBContainer>
-
-                    
                 </MDBModalBody>
 
                 <MDBModalFooter>
