@@ -8,7 +8,8 @@ import React, {
 import { 
     MDBRow, 
     MDBCol, 
-    MDBBtn
+    MDBBtn,
+    MDBContainer
 } from "mdbreact";
 
 
@@ -25,37 +26,39 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <MDBCol className="m-3 z-depth-1-half round-corner project-card" lg="3" md="4" sm="6" xs="12">
+        <MDBCol className="round-corner" lg="3" md="4" sm="6" xs="12">
 
-            <ModalContext.Provider value={[modalState, setModalState]}>
-                <Modal
-                    header={props.ModalHeader}
-                    body={props.ModalBody}
-                    footer={props.ModalFooter}
-                    image={props.ModalImage}
-                    url={props.ModalURL}
-                    github={props.ModalGitHub}
-                />
-            </ModalContext.Provider>
+            <MDBContainer className="m-2 z-depth-1 round-corner">
 
-            <MDBRow className="px-3 py-2" center>
-                <img className="img-fluid z-depth-1-half rounded" src={props.image} />
-            </MDBRow>
+                <ModalContext.Provider value={[modalState, setModalState]}>
+                    <Modal
+                        header={props.ModalHeader}
+                        body={props.ModalBody}
+                        footer={props.ModalFooter}
+                        image={props.ModalImage}
+                        url={props.ModalURL}
+                        github={props.ModalGitHub}
+                    />
+                </ModalContext.Provider>
 
-            <MDBRow className="px-3 py-1">
-                <h4>
-                    {props.title}
-                </h4>
-            </MDBRow>
+                <MDBRow className="px-3 py-2" center>
+                    <img className="img-fluid z-depth-1 rounded" src={props.image} />
+                </MDBRow>
 
-            <MDBRow className="px-3">
-                {props.desc}
-            </MDBRow>
+                <MDBRow className="px-3 py-1">
+                    <h4>
+                        {props.title}
+                    </h4>
+                </MDBRow>
 
-            <MDBRow className="px-3 py-1">
-                <MDBBtn onClick={btnHandler}>Details</MDBBtn>
-            </MDBRow>
+                <MDBRow className="px-3">
+                    {props.desc}
+                </MDBRow>
 
+                <MDBRow className="px-3 py-1">
+                    <MDBBtn onClick={btnHandler}>Details</MDBBtn>
+                </MDBRow>
+            </MDBContainer>
         </MDBCol>
     );
 }

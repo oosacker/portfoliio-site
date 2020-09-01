@@ -21,7 +21,7 @@ const Projects = () => {
                 </MDBCol>
             </MDBRow>
 
-            <MDBRow left >
+            <MDBRow >
 
                 <ProjectCard 
                     title="WeatherChecker"
@@ -58,7 +58,7 @@ const Projects = () => {
 
                 <ProjectCard 
                     title="StyleFit"
-                    desc="A full-stack web application prototype for an industrial client (The Story Mint)."
+                    desc="A full-stack Python/JavaScript web application prototype for an industrial client (The Story Mint)."
                     image="./images/small/stylefit.jpg"
                     ModalHeader="StyleFit"
                     ModalBody={["This was a industrial group project for SWEN503. The project involved working with UX design students from the Wellington ICT Graduate School, and our client was The Story Mint. The task was to implement a proprietary Python-based text analysis API onto a web app.",<br/>,<br/>,"This involved learning Python and a web framework (Flask), setting up a SQL database server, creating the user interface to match the UX design and displaying the analysis results. Note that the project is under NDA, so the code and web app cannot be shown.",<br/>,<br/>,"One of the major difficultites of the project was communicating with the UX design students, as they would keep to their own schedule. We however managed to get an A+."]}
@@ -69,7 +69,7 @@ const Projects = () => {
 
                 <ProjectCard 
                     title="MakeRipples"
-                    desc="A full-stack web application prototype for an industrial client (MakeRipples)."
+                    desc="A full-stack Python/JavaScript web application prototype for an industrial client (MakeRipples)."
                     image="./images/small/makeripples.jpg"
                     ModalHeader="MakeRipples"
                     ModalBody={["This was the second industrial group project for SWEN503. The client was MakeRipples. We worked in a group to implement a web app which implemented the Add Ripple feature which would allow organisers to make events for their group.",<br/>,<br/>,"Python was used for the backend and JavaScript/Bootstrap for the frontend. I mostly worked on the frontend forms and navigation system. No online link is available. We got an A."]}
@@ -80,7 +80,7 @@ const Projects = () => {
 
                 <ProjectCard 
                     title="Pizzeria Napoli"
-                    desc="A JavaFX desktop application for tracking pizza orders at a fictional restaurant."
+                    desc="A JavaFX desktop application connecting to a MySQL database for tracking pizza orders at a fictional restaurant."
                     image="./images/small/pizza.jpg"
                     ModalHeader="Pizzeria Napoli"
                     ModalBody={["This was a group project for the course SWEN502. The requirement was to create a web app for customers to design their own customised pizza for a pizza restaurant, as well as an in-store desktop app for tracking the orders.",<br/>,<br/>,"I was in charge of designing the SQL database and the backend for the desktop app in Java, as well as improving the JavaFX user interface. No online link is available. We got an A."]}
@@ -91,7 +91,7 @@ const Projects = () => {
 
                 <ProjectCard 
                     title="NatBrowserPro"
-                    desc="A fully-functional web browser app for Android phones built in under one week."
+                    desc="A fully-functional Java-based web browser app for the Android OS built in under one week."
                     image="./images/small/browser.jpg"
                     ModalHeader="NatBrowserPro"
                     ModalBody={["During SWEN502 we learned Android development for one week. The final assignment was to create a fully working web browser. The browser has go forward/backward buttons, as well as bookmarking and history functions.",<br/>,<br/>,"This was one of the most difficult assignments of the course, as we were asked to implement functions we had not learnt in class. Also, there were some issues about compatibility. Many students were upset with their grade. Mine was fine, as I knew I had to keep the Android API level low in Android Studio. I got an A+."]}
