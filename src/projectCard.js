@@ -51,13 +51,14 @@ const ProjectCard = (props) => {
                     </h4>
                 </MDBRow>
 
-                <MDBRow className="px-3">
+                <MDBRow className="px-3 pb-3">
                     {props.desc}
                 </MDBRow>
 
-                <MDBRow className="px-3 py-1">
+                <MDBRow className="px-3 py-1 project-card-footer" end>
                     <MDBBtn onClick={btnHandler}>Details</MDBBtn>
                 </MDBRow>
+
             </MDBContainer>
         </MDBCol>
     );

@@ -11,6 +11,10 @@
   transform: scale(1.05);
 } */
 
+.project-card-footer {
+  border-top: 1px solid rgb(222, 226, 230);
+}
+
 body {
   margin-top: 70px;
   background-color: whitesmoke; 
