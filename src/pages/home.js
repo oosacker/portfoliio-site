@@ -13,10 +13,10 @@ const Home = () => {
     return (
         <MDBContainer className="home-container">
 
-            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1 round-corner">
 
                 <MDBCol xl="4" lg="12" top className="right-border mb-2 profile-pic-container">
-                    <img src="/images/photo.png" className="img-fluid z-depth-1-half rounded" alt="profile"/>
+                    <img src="/images/photo.png" className="img-fluid z-depth-1 rounded" alt="profile"/>
                 </MDBCol>
 
                 <MDBCol xl="8" lg="12" top>
@@ -29,7 +29,7 @@ const Home = () => {
             </MDBRow>
 
 
-            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1 round-corner">
 
                 <MDBCol xl="4" lg="12" className="right-border">
                     <h3>Software Skills</h3>
@@ -71,7 +71,7 @@ const Home = () => {
             </MDBRow>
 
 
-            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1 round-corner">
                 <MDBCol>
                     <h3>Employment History</h3>
 
@@ -121,7 +121,7 @@ const Home = () => {
 
             
  
-            <MDBRow className="mb-3 mx-1 p-3 z-depth-1-half round-corner">
+            <MDBRow className="mb-3 mx-1 p-3 z-depth-1 round-corner">
 
                 <MDBCol>
                     <h3>Education</h3>

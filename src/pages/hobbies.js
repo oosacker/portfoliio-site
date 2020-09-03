@@ -11,15 +11,11 @@ const Hobbies = () => {
                 </MDBCol>
             </MDBRow>
 
-            <MDBRow left >
-                <MDBCol className="m-3 z-depth-1-half round-corner" md={"5"}>
-                    test test
-                </MDBCol>
+            <MDBContainer className="z-depth-1 round-corner">
+                <p>Under construction</p>
+                
+            </MDBContainer>
 
-                <MDBCol className="m-3 z-depth-1-half round-corner" md={"5"}>
-                    test test
-                </MDBCol>
-            </MDBRow>
         </MDBContainer>
     );
 }
