@@ -18,8 +18,7 @@ import {
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  useLocation 
+  Route 
 } from "react-router-dom";
 
 import Home from './pages/home';
@@ -36,14 +35,12 @@ const App = () => {
   const[currentPage, setPage] = useState("/");
 
   const toggleCollapse = () => {
-    // console.log('set');
     setOpen(!isOpen);
   }
 
   const navClickHandler = () => {
     setPage(window.location.pathname);
-    // console.log(currentPage);
-    // setOpen(!isOpen); // needed to close the navbar menu when in mobile mode
+    setOpen(false); // need to close the nav menu when link is clicked in mobile mode
   }  
 
   return (
@@ -63,19 +60,19 @@ const App = () => {
 
             <MDBNavbarNav left>
 
-              <MDBNavItem active={window.location.pathname === '/'} onClick={navClickHandler}>
+              <MDBNavItem active={currentPage === '/'} onClick={navClickHandler}>
                 <MDBNavLink to="/">Home</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem  active={window.location.pathname === '/projects'} onClick={navClickHandler}>
+              <MDBNavItem  active={currentPage === '/projects'} onClick={navClickHandler}>
                 <MDBNavLink to="/projects">Projects</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem active={window.location.pathname === '/hobbies'} onClick={navClickHandler}>
+              <MDBNavItem active={currentPage === '/hobbies'} onClick={navClickHandler}>
                 <MDBNavLink to="/hobbies">Hobbies</MDBNavLink>
               </MDBNavItem>
 
-              <MDBNavItem active={window.location.pathname === '/about'} onClick={navClickHandler}>
+              <MDBNavItem active={currentPage === '/about'} onClick={navClickHandler}>
                 <MDBNavLink to="/about">About</MDBNavLink>
               </MDBNavItem>
 
