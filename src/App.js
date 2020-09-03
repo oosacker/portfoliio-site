@@ -36,13 +36,14 @@ const App = () => {
   const[currentPage, setPage] = useState()
 
   const toggleCollapse = () => {
-    console.log('set');
+    // console.log('set');
     setOpen(!isOpen);
   }
 
   const navClickHandler = () => {
     setPage(window.location.pathname);
-    console.log(currentPage);
+    // console.log(currentPage);
+    setOpen(!isOpen); // needed to close the navbar menu when in mobile mode
   }  
 
   return (
