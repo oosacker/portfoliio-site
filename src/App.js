@@ -33,7 +33,7 @@ import './css/App.css';
 const App = () => {
 
   const[isOpen, setOpen] = useState(false);
-  const[currentPage, setPage] = useState()
+  const[currentPage, setPage] = useState("/");
 
   const toggleCollapse = () => {
     // console.log('set');
@@ -43,7 +43,7 @@ const App = () => {
   const navClickHandler = () => {
     setPage(window.location.pathname);
     // console.log(currentPage);
-    setOpen(!isOpen); // needed to close the navbar menu when in mobile mode
+    // setOpen(!isOpen); // needed to close the navbar menu when in mobile mode
   }  
 
   return (
