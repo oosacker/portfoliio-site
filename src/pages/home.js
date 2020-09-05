@@ -21,7 +21,7 @@ const Home = () => {
 
                 <MDBCol xl="8" lg="12" top>
                     <h3>Natsuki Hasegawa</h3>
-                    <p>I am a New Zealand-born Japanese male from Wellington who just completed my studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School (courses were taught by Victoria University of Wellington).</p> 
+                    <p>I am a New Zealand-born Japanese male from Wellington, and I just completed my studies toward a Master of Software Development (MSwDev) degree at the Wellington ICT Graduate School (courses were taught by Victoria University of Wellington).</p> 
                     <p>I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was an professional electronics engineer for over 6 years.</p> 
                     <p>I am passionate about learning how things work and creating things which are both aestheically pleasing and functional. This website shows you my previous projects and interests.</p>
                 </MDBCol>
