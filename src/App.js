@@ -67,10 +67,10 @@ const App = () => {
               <MDBNavItem  active={currentPage === '/projects'} onClick={navClickHandler}>
                 <MDBNavLink to="/projects">Projects</MDBNavLink>
               </MDBNavItem>
-
+{/* 
               <MDBNavItem active={currentPage === '/hobbies'} onClick={navClickHandler}>
                 <MDBNavLink to="/hobbies">Hobbies</MDBNavLink>
-              </MDBNavItem>
+              </MDBNavItem> */}
 
               <MDBNavItem active={currentPage === '/about'} onClick={navClickHandler}>
                 <MDBNavLink to="/about">About</MDBNavLink>

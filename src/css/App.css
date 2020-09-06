@@ -7,11 +7,21 @@
 }
 
 
-/* .project-card:hover {
-  transform: scale(1.05);
+/* cannot be used with modal - caused flashing error!!! */
+.pro-card:hover {
+  /* transform: scale(1.05); */
+}
+
+/* to equalise the horizontal and vertical gaps */
+.pro-container {
+  margin-bottom: 30px; 
+}
+
+/* .pro-column {
+  padding: 0 10px !important;
 } */
 
-.project-card-footer {
+.pro-card-footer {
   border-top: 1px solid rgb(222, 226, 230);
 }
 

@@ -26,9 +26,10 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <MDBCol className="round-corner" lg="3" md="4" sm="6" xs="12">
+        // NOTE: adds 15 px padding both sides!!
+        <MDBCol className="pro-card round-corner pro-column" lg="3" md="4" sm="6" xs="12">
 
-            <MDBContainer className="m-2 z-depth-1 round-corner">
+            <MDBContainer className="pro-container z-depth-1 round-corner">
 
                 <ModalContext.Provider value={[modalState, setModalState]}>
                     <Modal
@@ -55,7 +56,7 @@ const ProjectCard = (props) => {
                     {props.desc}
                 </MDBRow>
 
-                <MDBRow className="px-3 py-1 project-card-footer" end>
+                <MDBRow className="px-3 py-1 pro-card-footer" end>
                     <MDBBtn onClick={btnHandler}>Details</MDBBtn>
                 </MDBRow>
 
