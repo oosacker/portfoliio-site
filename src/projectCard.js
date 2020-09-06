@@ -1,7 +1,5 @@
 import React, {    
-    useState, 
-    useEffect,
-    useContext,
+    useState,
     createContext
 } from "react";
 
@@ -43,7 +41,7 @@ const ProjectCard = (props) => {
                 </ModalContext.Provider>
 
                 <MDBRow className="px-3 py-2" center>
-                    <img className="img-fluid z-depth-1 rounded" src={props.image} />
+                    <img className="img-fluid z-depth-1 rounded" src={props.image} alt={props.title} />
                 </MDBRow>
 
                 <MDBRow className="px-3 py-1">
