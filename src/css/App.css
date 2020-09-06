@@ -6,20 +6,10 @@
   border-radius: 10px;
 }
 
-
-/* cannot be used with modal - caused flashing error!!! */
-.pro-card:hover {
-  /* transform: scale(1.05); */
-}
-
 /* to equalise the horizontal and vertical gaps */
 .pro-container {
   margin-bottom: 30px; 
 }
-
-/* .pro-column {
-  padding: 0 10px !important;
-} */
 
 .pro-card-footer {
   border-top: 1px solid rgb(222, 226, 230);
@@ -27,6 +17,7 @@
 
 body {
   margin-top: 70px;
+  margin-bottom: 50px;
   background-color: whitesmoke; 
 }
 
