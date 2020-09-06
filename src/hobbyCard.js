@@ -3,7 +3,7 @@ import React from "react";
 import { 
     MDBRow, 
     MDBCol, 
-    MDBBtn,
+    MDBIcon,
     MDBContainer
 } from "mdbreact";
 
@@ -11,19 +11,27 @@ import {
 const HobbyCard = (props) => {
 
     return (
-        <>
-            <MDBRow>
-                <h5>{props.title}</h5>
-            </MDBRow>
-            <MDBRow>
-                <p>{props.desc}</p>
-            </MDBRow>
-            <MDBRow>
-                <MDBCol>
-
-                </MDBCol>
-            </MDBRow>
-        </>
+        <MDBCol>
+            <MDBContainer className="pro-container z-depth-1 round-corner">
+                <MDBRow>
+                    <h5><MDBIcon icon={props.icon} /> {props.title}</h5>
+                </MDBRow>
+                <MDBRow>
+                    <p>{props.desc}</p>
+                </MDBRow>
+                <MDBRow>
+                    
+                    {props.images.map( (value) => {
+                        return ( 
+                            <MDBCol >
+                                <img src={value} className="img-fluid" alt={props.title}/>
+                            </MDBCol> 
+                        )
+                    } )}
+                    
+                </MDBRow>
+            </MDBContainer>
+        </MDBCol>
     );
 }
 export default HobbyCard;

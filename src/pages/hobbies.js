@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdbreact";
 
 import HobbyCard from "../hobbyCard"
 
@@ -21,6 +21,7 @@ const Hobbies = () => {
 
                 <HobbyCard 
                     title="Football"
+                    icon={"futbol"}
                     desc="I am a football fan and currently play indoor soccer at the waterfront. I played for several years in the Wellington Sunday League for Inter Galactic FC, primarily as a right midfielder."
                     images={[
                         "./images/hobby_img/football/1.jpg",
