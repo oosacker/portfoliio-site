@@ -1,9 +1,15 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
+import HobbyCard from "../hobbyCard"
+
 const Hobbies = () => {
+
+
+
     return (
         <MDBContainer>
+
               <MDBRow>
                 <MDBCol>
                     <h3>Hobbies</h3>
@@ -11,10 +17,22 @@ const Hobbies = () => {
                 </MDBCol>
             </MDBRow>
 
-            <MDBContainer className="z-depth-1 round-corner">
-                <p>Under construction</p>
+            <MDBRow>
+
+                <HobbyCard 
+                    title="Football"
+                    desc="I am a football fan and currently play indoor soccer at the waterfront. I played for several years in the Wellington Sunday League for Inter Galactic FC, primarily as a right midfielder."
+                    images={[
+                        "./images/hobby_img/football/1.jpg",
+                        "./images/hobby_img/football/2.jpg",
+                        "./images/hobby_img/football/3.jpg",
+                        "./images/hobby_img/football/4.jpg",
+                        "./images/hobby_img/football/5.jpg",
+                        "./images/hobby_img/football/6.jpg",
+                    ]}
+                />
                 
-            </MDBContainer>
+            </MDBRow>
 
         </MDBContainer>
     );

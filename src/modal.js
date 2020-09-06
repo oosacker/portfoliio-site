@@ -1,13 +1,10 @@
-import React, {   
-    useState, 
-    useEffect,
+import React, {
     useContext
 } from 'react';
 
 import { 
     MDBContainer, 
     MDBRow,
-    MDBCol,
     MDBBtn, 
     MDBModal, 
     MDBModalBody, 
@@ -33,7 +30,7 @@ const Modal = (props) => {
                 animation="top" 
                 Modal 
                 autoFocus={true} 
-                Modal size="lg" 
+                size="lg" 
                 keyboard={true}
             >
 

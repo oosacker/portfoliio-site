@@ -1,6 +1,5 @@
 import React, {
-  useState, 
-  useEffect
+  useState
 } from 'react';
 
 import {
@@ -11,8 +10,7 @@ import {
   MDBNavLink,
   MDBNavbarToggler, 
   MDBCollapse, 
-  MDBIcon, 
-  MDBFooter 
+  MDBIcon
 } from "mdbreact";
 
 import {
