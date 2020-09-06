@@ -72,7 +72,7 @@ const Projects = () => {
                     desc="A full-stack Python/JavaScript web application prototype for an industrial client (MakeRipples)."
                     image="./images/small/makeripples.jpg"
                     ModalHeader="MakeRipples"
-                    ModalBody={["This was the second industrial group project for SWEN503. The client was MakeRipples. We worked in a group to implement a web app which implemented the Add Ripple feature, allowing organisers to create events for their own user group.",<br/>,<br/>,"Python was used for the backend and JavaScript/Bootstrap for the frontend. I mostly worked on the frontend forms and navigation menus. Google FireStore (A type of No-SQL database) was used for the database. No online link is available. We got an A."]}
+                    ModalBody={["This was the second industrial group project for SWEN503. The client was MakeRipples. We worked in a group to implement a web app which implemented the Add Ripple feature, allowing organisers to create events for their own user group.",<br/>,<br/>,"Python was used for the backend and JavaScript/Bootstrap for the frontend. I mostly worked on the frontend forms and navigation menus. Google FireStore (a type of No-SQL database) was used for data storage. No online link is available. We got an A."]}
                     ModalURL=""
                     ModalImage="./images/large/makeripples.png"
                     ModalGitHub={"https://github.com/oosacker/MakeRipples"}
@@ -94,7 +94,7 @@ const Projects = () => {
                     desc="A fully-functional Java-based web browser app for the Android OS built in under one week."
                     image="./images/small/browser.jpg"
                     ModalHeader="NatBrowserPro"
-                    ModalBody={["During SWEN502 we spend one week learning Android development. The final assignment was to create a fully working web browser. My browser has go forward/backward buttons, as well as bookmarking and history functions.",<br/>,<br/>,"This was one of the most difficult assignments of the whoel MSWDev course, as we were asked to implement functions we had not learnt in class with a very tight deadline. Also, there were some issues about compatibility. Many students were upset with their grade. Mine was fine, as I knew I had to keep the Android API level low in Android Studio. I was happy to have got an A+ grade for my project."]}
+                    ModalBody={["During SWEN502 we spend one week learning Android development. The final assignment was to create a fully working web browser. My browser has go forward/backward buttons, as well as bookmarking and history functions.",<br/>,<br/>,"This was one of the most difficult assignments of the whole MSWDev course, as we were asked to implement functions we had not learnt in class, with a very tight deadline. ",<br/>,<br/>,"Also, there were some issues about compatibility, and their app wouldn't work on the lecturer's device. Many students were upset with their grade, some of them asking for a revision. Mine was fine, as I knew I had to keep the Android API level low in Android Studio. I was happy to have got an A+ grade for my project."]}
                     ModalURL=""
                     ModalImage="./images/large/browser.png"
                     ModalGitHub={"https://github.com/oosacker/AndroidWebBrowser"}
