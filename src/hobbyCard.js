@@ -11,25 +11,29 @@ import {
 const HobbyCard = (props) => {
 
     return (
-        <MDBCol>
-            <MDBContainer className="pro-container z-depth-1 round-corner">
-                <MDBRow>
+        <MDBCol className="mb-3">
+            <MDBContainer className="">
+
+                <MDBRow className="px-3">
                     <h5><MDBIcon icon={props.icon} /> {props.title}</h5>
                 </MDBRow>
-                <MDBRow>
+
+                <MDBRow className="px-3">
                     <p>{props.desc}</p>
                 </MDBRow>
+
                 <MDBRow>
                     
                     {props.images.map( (value) => {
                         return ( 
-                            <MDBCol >
-                                <img src={value} className="img-fluid" alt={props.title}/>
+                            <MDBCol lg="4" md="6" sm="12">
+                                <img src={value} className="img-fluid mb-3 rounded z-depth-1" alt={props.title}/>
                             </MDBCol> 
                         )
                     } )}
                     
                 </MDBRow>
+
             </MDBContainer>
         </MDBCol>
     );
