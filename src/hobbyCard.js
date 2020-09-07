@@ -15,7 +15,7 @@ const HobbyCard = (props) => {
 
             <MDBContainer className="z-depth-1 round-corner">
 
-                <MDBRow className="px-3 py-2">
+                <MDBRow className="px-3 pt-3 pb-2">
                     <h4><MDBIcon icon={props.icon} /> {props.title}</h4>
                 </MDBRow>
 

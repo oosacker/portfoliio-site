@@ -70,6 +70,23 @@ const Hobbies = () => {
                 />
             </MDBRow>
 
+            <MDBRow>
+                <HobbyCard 
+                    title="Photography"
+                    icon={"camera"}
+                    desc={[
+                        "I enjoy taking photos, not only on my phone but on a real camera. The camera I use is a ", 
+                        <a href="https://www.canon.co.nz/cameras/powershot-g7x-mark-ii">Canon PowerShot G7 X Mark II</a>,
+                        ". I mainly like to take photos of landscapes and animals. The photo on the right is a ", 
+                        <a href="https://www.sciencelearn.org.nz/resources/511-monarch-butterflies">monarch butterfly</a>, 
+                        " I spotted near my house one summer. My photos are on sale at ", 
+                        <a href="https://www.shutterstock.com/g/NatsukiH">Shutterstock</a>,
+                        "."
+                    ]}
+                    image={"./images/hobby_img/photo/2.jpg"}
+                />
+            </MDBRow>
+
         </MDBContainer>
     );
 }

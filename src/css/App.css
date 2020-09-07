@@ -19,6 +19,7 @@ body {
   margin-top: 70px;
   margin-bottom: 50px;
   background-color: whitesmoke; 
+  /* background-image: url("/images/wallpaper.jpg"); */
 }
 
 @media (min-width: 1200px) { 
