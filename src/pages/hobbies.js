@@ -83,7 +83,7 @@ const Hobbies = () => {
                         <a href="https://www.shutterstock.com/g/NatsukiH">Shutterstock</a>,
                         "."
                     ]}
-                    image={"./images/hobby_img/photo/2.jpg"}
+                    image={"./images/hobby_img/photo/3.jpg"}
                 />
             </MDBRow>
 
