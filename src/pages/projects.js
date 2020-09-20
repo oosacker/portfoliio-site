@@ -24,6 +24,28 @@ const Projects = () => {
             <MDBRow >
 
                 <ProjectCard 
+                    title="Signify Time"
+                    desc="A web app that displays New Zealand's time and date as measured by an atomic clock using NTP."
+                    image="./images/project_img/small/time.jpg"
+                    ModalHeader="Signify Time"
+                    ModalBody={["A single-page web app based on Express.js and React that displays New Zealand's time as measured by an atomic clock, built during my internship at Signify Limited.Data from the time server at the Measurement Standards Laboratory of New Zealand (MSL) was used as the source of time. It displays the time according to MSL's time server, Signify's web server and the user's browser, as well as measured time differences between them.",<br/>,<br/>,"The Network Time Protocol (NTP) is used to correct for network delays and accurately display the time. The backend system was built in Express.js by a senior develoepr at Signify, and I was in charge of the frontend. The design was made to look similar to Signify's homepage for promotional purposes. As this is not a personal project, no link or source code is available."]}
+                    ModalURL=""
+                    ModalImage="./images/project_img/large/time.png"
+                    ModalGitHub={""}
+                />
+
+                <ProjectCard 
+                    title="Signify Scheduler"
+                    desc="A simple web app based on Silverstripe for displaying staff schedules during standups built during my internship at Signify."
+                    image="./images/project_img/small/scheduler.jpg"
+                    ModalHeader="Signify Scheduler"
+                    ModalBody={["One of the first projects I worked on during my internship at Signify Limited. Due to the Covid-19 lockdown between March and April 2020, Signify staff began working from home. This also meant daily standups on Zoom. To aid this, a simple web app was built using the Silverstripe CMS to display staff schedules for the work week. The user interface was built using a Silverstripe theme based on Bootstrap.",<br/>,<br/>,"This app became a favourite at Signify, and it is still being used at the company during their (now) in-person standups. As this is not a personal project, no link or source code is available."]}
+                    ModalURL=""
+                    ModalImage="./images/project_img/large/scheduler.png"
+                    ModalGitHub={""}
+                />
+
+                <ProjectCard 
                     title="WeatherChecker"
                     desc="A simple web app that allows you to check the weather in selected city using the OpenWeatherMap API."
                     image="./images/project_img/small/weather-checker.jpg"
