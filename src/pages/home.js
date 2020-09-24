@@ -22,7 +22,7 @@ const Home = () => {
                 <MDBCol xl="8" lg="12" top>
                     <h3>Natsuki Hasegawa</h3>
                     <p>I am a New Zealand-born Japanese male from <a href="https://www.wellingtonnz.com/">Wellington</a>, New Zealand, and I just completed my studies toward a Master of Software Development (MSwDev) degree at the <a href="https://wellingtonict.ac.nz/">Wellington ICT Graduate School</a> (courses were taught by <a href="https://www.wgtn.ac.nz/">Victoria University of Wellington</a>).</p> 
-                    <p>I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was an professional electronics engineer for over 6 years.</p> 
+                    <p>I also hold a Master of Science (MSc) in Electronics and Computer Systems Engineering, and before making the switch to software, I was a professional electronics engineer for over 6 years.</p> 
                     <p>I am passionate about learning how things work and creating things which are both aestheically pleasing and functional. This website shows you my previous projects and interests.</p>
                 </MDBCol>
 
@@ -90,6 +90,14 @@ const Home = () => {
                             </tr>
                         </MDBTableHead>
                         <MDBTableBody>
+                            <tr>
+                                <td>September 2020 – Present</td>
+                                <td>Sunny Side Up Web Development</td>
+                                <td>Web Developer</td>
+                                <td>
+                                    Working part time as a PHP backend developer for a small local web development company.
+                                </td>
+                            </tr>
                             <tr>
                                 <td>March 2020 – July 2020</td>
                                 <td>Signify Limited</td>
