@@ -1,13 +1,10 @@
-import React, {   
-    useState, 
-    useEffect,
+import React, {
     useContext
 } from 'react';
 
 import { 
     MDBContainer, 
     MDBRow,
-    MDBCol,
     MDBBtn, 
     MDBModal, 
     MDBModalBody, 
@@ -33,7 +30,7 @@ const Modal = (props) => {
                 animation="top" 
                 Modal 
                 autoFocus={true} 
-                Modal size="lg" 
+                size="lg" 
                 keyboard={true}
             >
 
@@ -43,7 +40,7 @@ const Modal = (props) => {
                 <MDBModalBody>
                     <MDBContainer>
                         <MDBRow >
-                            <img src={props.image} className={"img-fluid z-depth-1-half rounded"}/>
+                            <img src={props.image} className={"img-fluid z-depth-1-half rounded"} alt={props.title}/>
                         </MDBRow>
                         <MDBRow className="pt-3">
                             <p>{props.body}</p>
