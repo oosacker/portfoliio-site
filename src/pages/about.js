@@ -14,7 +14,7 @@ const About = () => {
                   <li><a href="https://reactrouter.com/">React-Router</a> is used for the navbar - notice how the URL changes when you click on the different links, despite being a single page web app.</li>
                   <li><a href="https://github.com/mars/create-react-app-buildpack">Heroku Buildpack for create-react-app</a> was used to deploy this web app to Heroku.</li>
                   <li>The source code for this website can be seen on <a href="https://github.com/oosacker/portfolio-site">GitHub</a>.</li>
-                  <li>The hosting is provided by <a href="http://heroku.com">Heroku</a> while the domain name is managed by <a href="http://hover.com">Hover</a>. Connecting 2 separate services wasn't so simple, especially with Heroku's dyno system that doesn't provide a static IP address (which can be used for an A-Record). To do this, DNS targets (CNAME record) had to be generated on Heroku and configured on Hover's DNS settings. I also use <a href="https://cloudflare.comk">Cloudflare</a> to manage the DNS.</li>
+                  <li>The hosting is provided by <a href="http://heroku.com">Heroku</a> while the domain name is managed by <a href="http://hover.com">Hover</a>. Connecting 2 separate services wasn't so simple, especially with Heroku's dyno system that doesn't provide a static IP address (which can be used for an A-Record). To do this, DNS targets (CNAME record) had to be generated on Heroku and configured on Hover's DNS settings. I also use <a href="https://cloudflare.com">Cloudflare</a> to manage the DNS.</li>
               </ul>
         </MDBContainer>
     );
