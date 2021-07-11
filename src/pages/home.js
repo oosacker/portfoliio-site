@@ -91,11 +91,19 @@ const Home = () => {
                         </MDBTableHead>
                         <MDBTableBody>
                             <tr>
-                                <td>September 2020 – Present</td>
-                                <td>Sunny Side Up Web Development</td>
-                                <td>Web Developer</td>
+                                <td>May 2020 – Present</td>
+                                <td>Somar Digital</td>
+                                <td>Junior Developer</td>
                                 <td>
-                                    Working part time as a PHP backend developer for a small local web development company.
+                                    Working as a full-time web developer on the Help Desk team. Assisting clients with issues, implementing new features and fixing bugs on production websites.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>September 2020 – April 2021</td>
+                                <td>Sunny Side Up Web Development</td>
+                                <td>Team Member</td>
+                                <td>
+                                    Working part time as a web developer for a small local web development company.
                                 </td>
                             </tr>
                             <tr>
